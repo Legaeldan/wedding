@@ -34,7 +34,7 @@
           </nav>
 <div class="row noMargin">
     <div class="col-sm-8 offset-sm-2 mainContentMap">
-        <h1 id="RSVPTitle">
+        <h1 id="MapTitle">
             Daily Agenda
         </h1>
     </div>
@@ -42,12 +42,12 @@
     <div id="map"></div>
 </div>
 <div id="mapSelector" class="col-sm-12 col-md-4">
-        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Block level button</button>
-        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Block level button</button>
-        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Block level button</button>
-        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Block level button</button>
-        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Block level button</button>
-        <button type="button" class="btn btn-secondary selectorButton btn-secondary btn-lg btn-block">Block level button</button>
+        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Wedding</button>
+        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Accommodation</button>
+        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Local Attractions</button>
+        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Journey</button>
+        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Placeholder</button>
+        <button type="button" class="btn btn-secondary selectorButton btn-secondary btn-lg btn-block">Placeholder</button>
 </div>
     </div>
 
@@ -68,6 +68,7 @@
                 zoom: 8,
                 center: {lat: 54.196, lng: -8.798}
               });
+              var geocoder = new google.maps.Geocoder();
       
               // Create an array of alphabetical characters used to label the markers.
               var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -91,6 +92,17 @@
               {lat: 54.270196, lng: -8.477434},
               {lat: 54.133428, lng: -9.145543},
             ]
+            google.maps.event.addListener(map, 'click', function(event) {
+  geocoder.geocode({
+    'latLng': event.latLng
+  }, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      if (results[0]) {
+        alert(results[0].formatted_address);
+      }
+    }
+  });
+});
           </script>
           <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
           </script>

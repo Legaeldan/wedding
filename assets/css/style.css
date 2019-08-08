@@ -132,12 +132,15 @@ svg {
 }
 
 #RSVPTitle {
-    display: none;
     color: black;
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
-    padding: 50px;
+    padding: 20px;
+}
+
+#MapTitle {
+    display: none;
 }
 
 #RSVPForm {
@@ -145,7 +148,6 @@ svg {
     text-align: center;
     font-size: 2rem;
     font-weight: 700;
-    padding-top: 50px;
 }
 
 .formPadding {
@@ -157,7 +159,7 @@ svg {
     border-color: var(--dusty-dark);
     font-size: 2rem;
     padding: 10px 50px;
-    margin-top: 50px !important;
+    margin-top: 20px !important;
 }
 
 #rsvpSubmit:hover {
@@ -232,8 +234,18 @@ svg {
     #rsvp {
         font-size: 2rem;
     }
-
     #RSVPTitle {
+        padding: 50px;
+    }
+
+    #RSVPForm {
+        padding-top: 50px;
+    }
+    #rsvpSubmit {
+        margin-top: 50px !important;
+    }
+   
+    #MapTitle {
         display: block;
     }
 

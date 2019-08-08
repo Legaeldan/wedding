@@ -132,6 +132,7 @@ svg {
 }
 
 #RSVPTitle {
+    display: none;
     color: black;
     text-align: center;
     font-size: 4rem;
@@ -188,11 +189,15 @@ svg {
 .selectorButton {
     background-color: var(--dusty-rose);
     border-color: var(--dusty-dark);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--cream);
-    padding: 10px 50px;
+    padding: 5px 0px;
     opacity: 0.5;
+}
+
+#mapSelector {
+    margin: 15px 5px;
 }
 
 .selectorButton:hover,
@@ -228,4 +233,16 @@ svg {
         font-size: 2rem;
     }
 
+    #RSVPTitle {
+        display: block;
+    }
+
+    .selectorButton {
+        font-size: 3rem;
+        padding: 10px 50px;
+    }
+
+    #mapSelector {
+        padding:0px;
+    }
 }

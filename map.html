@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RSVP - Trudy & Kieran 2020</title>
+    <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark nav-back">
+            <a class="navbar-brand" href="#">KC &hearts; TC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Accommodation</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="map.html">Map</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+<div class="row">
+    <div class="col-sm-8 offset-sm-2 mainContentMap">
+        <h1 id="RSVPTitle">
+            Daily Agenda
+        </h1>
+    </div>
+    <div id="mapSurround" class="col-sm-4 offset-sm-2">
+    <div id="map"></div>
+</div>
+<div id="mapSelector" class="col-sm-4 offset-sm-2"></div>
+    </div>
+
+
+
+
+
+
+
+    <script src="assets/lib/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/lib/js/popper.min.js"></script>
+    <script src="assets/lib/js/bootstrap.min.js"></script>
+    <script>
+
+            function initMap() {
+      
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: {lat: 54.196, lng: -8.798}
+              });
+      
+              // Create an array of alphabetical characters used to label the markers.
+              var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      
+              // Add some markers to the map.
+              // Note: The code uses the JavaScript Array.prototype.map() method to
+              // create an array of markers based on a given "locations" array.
+              // The map() method here has nothing to do with the Google Maps API.
+              var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                  position: location,
+                  label: labels[i % labels.length]
+                });
+              });
+      
+              // Add a marker clusterer to manage the markers.
+              var markerCluster = new MarkerClusterer(map, markers,
+                  {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+            }
+            var locations = [
+              {lat: 54.270196, lng: -8.477434},
+              {lat: 54.133428, lng: -9.145543},
+            ]
+          </script>
+          <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCtu84lQ8xW8yhJA0yx3doFEluEEUczGY&callback=initMap">
+          </script>
+</body>
+</html>

@@ -72,7 +72,7 @@ body {
     box-shadow: 0 0 0 0.2rem var(--dusty-rose);
 }
 
-.mainContent {
+.mainContentIndex {
     height: 100vh;
     background: url('../images/garavogue.jpg') no-repeat bottom right;
     background-size: 100%;
@@ -112,3 +112,54 @@ svg {
 .fa-pagelines {
     color: rgba(236, 181, 28, 0.945);
 }
+
+#RSVPTitle {
+    color: black;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    padding-top:100px;
+}
+
+#RSVPForm {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.formPadding {
+    padding: 10px;
+}
+
+#rsvpSubmit {
+    background-color: var(--dusty-rose);
+    border-color: var(--dusty-dark);
+    font-size: 2rem;
+    padding: 10px 50px;
+    margin-top: 50px!important;
+}
+
+#rsvpSubmit:hover {
+    background-color: var(--coral);
+    border-color: var(--dusty-dark);
+}
+
+.form-control {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.form-control:focus {
+    border-color: var(--dusty-dark);
+    box-shadow: 0 0 0 0.2rem rgba(245,200,194,.25)
+}
+
+#mapSurround {
+    height: 640px;
+}
+
+#map {
+    height: 100%;
+  }

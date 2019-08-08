@@ -45,8 +45,8 @@ body {
 }
 
 .navbar-brand {
-    font-size: 2.5rem;
-    padding: 0 1.5rem;
+    font-size: 2rem;
+    padding: 0;
 }
 
 .nav-link {
@@ -201,6 +201,11 @@ svg {
 }
 
 @media (min-width: 992px) {
+    .navbar-brand {
+        font-size: 2.5rem;
+        padding: 0 1.5rem;
+    }
+
     svg {
         height: 200px;
         width: 200px;

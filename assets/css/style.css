@@ -1,0 +1,86 @@
+/*Required for extra fonts to work
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Great+Vibes|Herr+Von+Muellerhoff|Meddon|Mr+De+Haviland|Rochester&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap');
+
+:root {
+    --cream: #F9F1F0;
+    --pale-pink: #FADCD9;
+    --rose-quartz: #FADCD9;
+    --dusty-rose: #F8AFA6;
+    --dusty-dark: #F5C8C2;
+    --coral: #F79489;
+
+  }
+
+body {
+    background-color: var(--cream);
+    color: var(--cream);
+
+    font-family: 'Amatic SC';
+    /*Multiple fonts for toggle testing.
+    font-family: 'Great Vibes';
+    font-family: 'Herr Von Muellerhoff';
+    font-family: 'Meddon';
+    font-family: 'Mr De Haviland';
+    font-family: 'Rochester';
+    */
+}
+
+.navbar-dark .navbar-brand {
+    color: var(--cream);
+}
+
+.nav-back {
+    background-color: var(--dusty-dark);
+    font-weight: 900;
+}
+.navbar-brand {
+    font-size: 1.75rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+#rsvp {
+    background-color: var(--dusty-rose);
+    border-color: var(--dusty-dark);
+}
+
+.btn-secondary:focus  {
+    box-shadow: 0 0 0 0.2rem var(--coral);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem var(--coral);
+}
+
+.mainContent {
+    background-color: var(--pale-pink);
+}
+
+h1 {
+    text-align: center;
+    padding: 3rem;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.fa-pagelines {
+    color: rgba(236, 181, 28, 0.745);
+    padding: 0 1rem;
+}
+
+img {
+    opacity: 0.7;
+    width: 28rem;
+    border-radius: 15px;
+    border: 3px solid #fff;
+    padding: 5px;
+    margin: 10px;
+}
+
+p {
+    font-size: 2rem;
+}

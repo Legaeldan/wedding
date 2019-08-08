@@ -16,7 +16,6 @@
 body {
     background-color: var(--cream);
     color: var(--cream);
-    overflow: hidden;
     font-family: 'Amatic SC';
     /*Multiple fonts for toggle testing.
     font-family: 'Great Vibes';
@@ -26,6 +25,10 @@ body {
     font-family: 'Rochester';
     */
 }
+#indexBody {
+    overflow:hidden;
+}
+
 .noMargin {
     margin: 0!important;
 }

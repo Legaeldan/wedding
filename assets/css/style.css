@@ -8,6 +8,7 @@
     --pale-pink: #FADCD9;
     --rose-quartz: #FADCD9;
     --dusty-rose: #F8AFA6;
+    --dusty-rose-faded: rgba(248, 176, 166, 0.5);
     --dusty-dark: #F5C8C2;
     --coral: #F79489;
   }
@@ -118,7 +119,7 @@ svg {
     text-align: center;
     font-size: 4rem;
     font-weight: 700;
-    padding-top:100px;
+    padding: 50px;
 }
 
 #RSVPForm {
@@ -158,8 +159,27 @@ svg {
 
 #mapSurround {
     height: 640px;
+    padding: 0;
+    box-shadow: 0 0 0 0.4rem var(--dusty-rose-faded);
 }
 
 #map {
     height: 100%;
+
   }
+
+.selectorButton {
+    background-color: var(--dusty-rose);
+    border-color: var(--dusty-dark);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--cream);
+    padding: 10px 50px;
+    opacity: 0.5;
+}
+
+.selectorButton:hover, .selectorButton:active, .btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: var(--coral);
+    border-color: var(--dusty-dark);
+    color: var(--cream);
+}

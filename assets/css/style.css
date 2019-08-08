@@ -11,7 +11,7 @@
     --dusty-rose-faded: rgba(248, 176, 166, 0.5);
     --dusty-dark: #F5C8C2;
     --coral: #F79489;
-  }
+}
 
 body {
     background-color: var(--cream);
@@ -26,6 +26,9 @@ body {
     font-family: 'Rochester';
     */
 }
+.noMargin {
+    margin: 0!important;
+}
 
 .navbar {
     text-align: center;
@@ -37,9 +40,10 @@ body {
 
 .nav-back {
     background-color: var(--dusty-rose);
-    opacity: 0.5; 
+    opacity: 0.5;
     font-weight: 900;
 }
+
 .navbar-brand {
     font-size: 2.5rem;
     padding: 0 1.5rem;
@@ -47,14 +51,14 @@ body {
 
 .nav-link {
     font-size: 1.75rem;
-    padding-left: 1.5rem!important;
-    padding-right: 1.5rem!important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
 }
 
 #rsvp {
     background-color: var(--dusty-rose);
     border-color: var(--dusty-dark);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     display: none;
     padding: 10px 50px;
@@ -65,11 +69,13 @@ body {
     border-color: var(--dusty-dark);
 }
 
-.btn-secondary:focus  {
+.btn-secondary:focus {
     box-shadow: 0 0 0 0.2rem var(--dusty-rose);
 }
 
-.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem var(--dusty-rose);
 }
 
@@ -87,15 +93,16 @@ body {
 #headingName {
     font-family: "Great Vibes";
     text-align: center;
-    padding-top: 10%;
-    font-size: 7.5rem;
+    margin-top: 50%;
+    font-size: 2rem;
     font-weight: 700;
     display: none;
+    text-shadow: -2px 2px 4px #000;
 }
 
 svg {
-    height: 200px;
-    width: 200px;
+    height: 50px;
+    width: 50px;
 }
 
 .absolution {
@@ -103,13 +110,13 @@ svg {
 }
 
 #leftSVG {
-    transform: scale(-1,1)
+    transform: scale(-1, 1)
 }
 
 #headingName2 {
     text-align: center;
-    font-size: 3.5rem;
     display: none;
+    text-shadow: -2px 2px 3px #000;
 }
 
 .rsvpButton {
@@ -146,7 +153,7 @@ svg {
     border-color: var(--dusty-dark);
     font-size: 2rem;
     padding: 10px 50px;
-    margin-top: 50px!important;
+    margin-top: 50px !important;
 }
 
 #rsvpSubmit:hover {
@@ -161,7 +168,7 @@ svg {
 
 .form-control:focus {
     border-color: var(--dusty-dark);
-    box-shadow: 0 0 0 0.2rem rgba(245,200,194,.25)
+    box-shadow: 0 0 0 0.2rem rgba(245, 200, 194, .25)
 }
 
 #mapSurround {
@@ -173,7 +180,7 @@ svg {
 #map {
     height: 100%;
 
-  }
+}
 
 .selectorButton {
     background-color: var(--dusty-rose);
@@ -185,8 +192,32 @@ svg {
     opacity: 0.5;
 }
 
-.selectorButton:hover, .selectorButton:active, .btn-secondary:not(:disabled):not(.disabled):active {
+.selectorButton:hover,
+.selectorButton:active,
+.btn-secondary:not(:disabled):not(.disabled):active {
     background-color: var(--coral);
     border-color: var(--dusty-dark);
     color: var(--cream);
+}
+
+@media (min-width: 992px) {
+    svg {
+        height: 200px;
+        width: 200px;
+    }
+
+    #headingName {
+        margin-top: 10%;
+        font-size: 7.5rem;
+    }
+
+    #headingName2 {
+        font-size: 3.5rem;
+
+    }
+
+    #rsvp {
+        font-size: 2rem;
+    }
+
 }

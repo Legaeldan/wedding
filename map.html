@@ -38,10 +38,10 @@
             Daily Agenda
         </h1>
     </div>
-    <div id="mapSurround" class="col-sm-4 offset-sm-2">
+    <div id="mapSurround" class="col-sm-12 col-md-4 offset-md-2">
     <div id="map"></div>
 </div>
-<div id="mapSelector" class="col-sm-4">
+<div id="mapSelector" class="col-sm-12 col-md-4">
         <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Block level button</button>
         <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Block level button</button>
         <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Block level button</button>
@@ -65,7 +65,7 @@
             function initMap() {
       
               var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 10,
+                zoom: 8,
                 center: {lat: 54.196, lng: -8.798}
               });
       

@@ -1,7 +1,7 @@
 /*Required for extra fonts to work
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Great+Vibes|Herr+Von+Muellerhoff|Meddon|Mr+De+Haviland|Rochester&display=swap');
 */
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Great+Vibes|&display=swap');
 
 :root {
     --cream: #F9F1F0;
@@ -10,13 +10,12 @@
     --dusty-rose: #F8AFA6;
     --dusty-dark: #F5C8C2;
     --coral: #F79489;
-
   }
 
 body {
     background-color: var(--cream);
     color: var(--cream);
-
+    overflow: hidden;
     font-family: 'Amatic SC';
     /*Multiple fonts for toggle testing.
     font-family: 'Great Vibes';
@@ -25,6 +24,10 @@ body {
     font-family: 'Mr De Haviland';
     font-family: 'Rochester';
     */
+}
+
+.navbar {
+    text-align: center;
 }
 
 .navbar-dark .navbar-brand {
@@ -46,29 +49,51 @@ body {
 #rsvp {
     background-color: var(--dusty-rose);
     border-color: var(--dusty-dark);
-}
-
-.btn-secondary:focus  {
-    box-shadow: 0 0 0 0.2rem var(--coral);
-}
-
-.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem var(--coral);
-}
-
-.mainContent {
-    background-color: var(--pale-pink);
-}
-
-h1 {
-    text-align: center;
-    padding: 3rem;
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
+#rsvp:hover {
+    background-color: var(--coral);
+    border-color: var(--dusty-dark);
+}
+
+.btn-secondary:focus  {
+    box-shadow: 0 0 0 0.2rem var(--dusty-rose);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem var(--dusty-rose);
+}
+
+.mainContent {
+    height: 100vh;
+    background: url('../images/garavogue.jpg') no-repeat bottom right;
+    background-size: 100%;
+    opacity: 0.5;
+
+}
+
+h1 {
+    font-family: "Great Vibes";
+    text-align: center;
+    padding-top: 15%;
+    font-size: 7.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.rsvpButton {
+    text-align: center;
+    padding: 20px;
+}
+
 .fa-pagelines {
-    color: rgba(236, 181, 28, 0.745);
+    color: rgba(236, 181, 28, 0.945);
     padding: 0 1rem;
 }
 

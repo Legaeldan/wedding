@@ -48,7 +48,7 @@ body {
 
 .nav-back {
     background-color: var(--dusty-rose);
-    opacity: 0.5;
+    opacity: 0.8;
     font-weight: 900;
 }
 
@@ -200,7 +200,7 @@ svg {
     font-weight: 700;
     color: var(--cream);
     padding: 5px 0px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 #mapSelector {

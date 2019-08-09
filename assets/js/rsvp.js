@@ -11,6 +11,7 @@ function sendMail(RSVPForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
+            alert
         },
         function(error) {
             console.log("FAILED", error);

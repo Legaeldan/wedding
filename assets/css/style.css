@@ -25,6 +25,11 @@ body {
     font-family: 'Rochester';
     */
 }
+
+.disableInput {
+    pointer-events: none;
+   }
+
 #indexBody {
     overflow:hidden;
 }

@@ -4,6 +4,7 @@ var maybe = "Maybe? MAYBE?! We haven't time for MAYBE! Get your act together!!";
 const modalResponse = document.getElementById("modalBody");
 
 function sendMail(RSVPForm) {
+    $("#rsvpSubmit").addClass("disableInput");
     emailjs.send("gmail", "test", {
         "first_name": RSVPForm.firstName.value,
         "last_name": RSVPForm.lastName.value,

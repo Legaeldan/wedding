@@ -42,7 +42,7 @@
     <div id="map"></div>
 </div>
 <div id="mapSelector" class="col-sm-12 col-md-4">
-        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Wedding</button>
+        <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block" id="weddingButton">Wedding</button>
         <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Accommodation</button>
         <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Local Attractions</button>
         <button type="button" class="btn btn-secondary selectorButton btn-lg btn-block">Journey</button>
@@ -60,50 +60,7 @@
     <script src="assets/lib/js/jquery-3.4.1.min.js"></script>
     <script src="assets/lib/js/popper.min.js"></script>
     <script src="assets/lib/js/bootstrap.min.js"></script>
-    <script>
-
-            function initMap() {
-      
-              var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 8,
-                center: {lat: 54.196, lng: -8.798}
-              });
-              var geocoder = new google.maps.Geocoder();
-      
-              // Create an array of alphabetical characters used to label the markers.
-              var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-      
-              // Add some markers to the map.
-              // Note: The code uses the JavaScript Array.prototype.map() method to
-              // create an array of markers based on a given "locations" array.
-              // The map() method here has nothing to do with the Google Maps API.
-              var markers = locations.map(function(location, i) {
-                return new google.maps.Marker({
-                  position: location,
-                  label: labels[i % labels.length]
-                });
-              });
-      
-              // Add a marker clusterer to manage the markers.
-              var markerCluster = new MarkerClusterer(map, markers,
-                  {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-            }
-            var locations = [
-              {lat: 54.270196, lng: -8.477434},
-              {lat: 54.133428, lng: -9.145543},
-            ]
-            google.maps.event.addListener(map, 'click', function(event) {
-  geocoder.geocode({
-    'latLng': event.latLng
-  }, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      if (results[0]) {
-        alert(results[0].formatted_address);
-      }
-    }
-  });
-});
-          </script>
+    <script src="assets/js/map.js"></script>
           <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
           </script>
           <script async defer

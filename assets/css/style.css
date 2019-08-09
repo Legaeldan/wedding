@@ -210,6 +210,16 @@ svg {
     color: var(--cream);
 }
 
+#goingResponse {
+    font-size: 2rem;
+    color: black;
+}
+
+#goingResponseLabel {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 @media (min-width: 992px) {
     .navbar-brand {
         font-size: 2.5rem;

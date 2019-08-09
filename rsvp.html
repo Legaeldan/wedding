@@ -1,95 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RSVP - Trudy & Kieran 2020</title>
-    <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init("user_GVHGiBK6u2n2rRrhql0V7");
-       })();
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RSVP - Trudy & Kieran 2020</title>
+  <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_GVHGiBK6u2n2rRrhql0V7");
+    })();
+  </script>
 
 </head>
+
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark nav-back">
-            <a class="navbar-brand" href="index.html">KC &#9825; TC</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarColor02">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Accommodation</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="map.html">Map</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-<div class="row noMargin">
+  <nav class="navbar navbar-expand-lg navbar-dark nav-back">
+    <a class="navbar-brand" href="index.html">KC &#9825; TC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+      aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Accommodation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="map.html">Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="row noMargin">
     <div class="col-sm-8 offset-sm-2 mainContentRSVP">
-        <h1 id="RSVPTitle">
-            RSVP Form
-        </h1>
-        <form id="RSVPForm" onsubmit="return sendMail(this);">
-            <div class="row">
-              <div class="col-sm-3 offset-sm-3 formPadding">
-                <input type="text" class="form-control" name="firstName" placeholder="First name" required>
-              </div>
-              <div class="col-sm-3 formPadding">
-                <input type="text" class="form-control" name="lastName" placeholder="Last name" required>
-              </div>
-  
-              <div class="col-sm-6 offset-sm-3 formPadding">
-                    <input type="email" class="form-control" name="eMail" placeholder="E-Mail" required>
-                  </div>
-                  <div class="col-sm-6 offset-sm-3 formPadding">
-                        <input type="tel" class="form-control" name="contactNumber" placeholder="Contact Number" required>
-                      </div>
-                      <div class="col-sm-12 formPadding">
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Going!" required>
-                              <label class="form-check-label" for="inlineRadio1">Going!</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Not Going" required>
-                              <label class="form-check-label" for="inlineRadio2">Not Going</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Maybe" required>
-                              <label class="form-check-label" for="inlineRadio3">Maybe...</label>
-                            </div>
-                            </div>
+      <h1 id="RSVPTitle">
+        RSVP Form
+      </h1>
+      <form id="RSVPForm" onsubmit="return sendMail(this);">
+        <div class="row">
+          <div class="col-sm-3 offset-sm-3 formPadding">
+            <input type="text" class="form-control" name="firstName" placeholder="First name" required>
+          </div>
+          <div class="col-sm-3 formPadding">
+            <input type="text" class="form-control" name="lastName" placeholder="Last name" required>
+          </div>
 
+          <div class="col-sm-6 offset-sm-3 formPadding">
+            <input type="email" class="form-control" name="eMail" placeholder="E-Mail" required>
+          </div>
+          <div class="col-sm-6 offset-sm-3 formPadding">
+            <input type="tel" class="form-control" name="contactNumber" placeholder="Contact Number" required>
+          </div>
+          <div class="col-sm-12 formPadding">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Going!"
+                required>
+              <label class="form-check-label" for="inlineRadio1">Going!</label>
             </div>
-            <button id="rsvpSubmit" class="btn btn-secondary my-2 my-sm-0" type="submit">RSVP!</button>
-          </form>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Not Going"
+                required>
+              <label class="form-check-label" for="inlineRadio2">Not Going</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Maybe"
+                required>
+              <label class="form-check-label" for="inlineRadio3">Maybe...</label>
+            </div>
+          </div>
+
+        </div>
+        <button id="rsvpSubmit" class="btn btn-secondary my-2 my-sm-0" type="submit">RSVP!</button>
+      </form>
     </div>
+  </div>
+
+
+  <div class="modal fade" id="goingResponse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="goingResponseLabel">Thank you for your response!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div id="modalBody" class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button id="modalClose" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
+  </div>
 
 
 
 
-
-
-    <script type="text/javascript" src="assets/js/rsvp.js"></script>
-    <script src="https://kit.fontawesome.com/4ac7a92b58.js"></script>
-    <script src="assets/lib/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/lib/js/popper.min.js"></script>
-    <script src="assets/lib/js/bootstrap.min.js"></script>
-    <script src="assets/js/fonting.js"></script>
+  <script src="https://kit.fontawesome.com/4ac7a92b58.js"></script>
+  <script src="assets/lib/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/lib/js/popper.min.js"></script>
+  <script src="assets/lib/js/bootstrap.min.js"></script>
+  <script src="assets/js/fonting.js"></script>
+  <script type="text/javascript" src="assets/js/rsvp.js"></script>
 </body>
+
 </html>

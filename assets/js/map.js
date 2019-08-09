@@ -10,7 +10,7 @@ $(document).ready(function() {
 });
 
 var weddingLocations = [
-    {lat: 54.270196, lng: -8.477434},
+    {lat: 54.270196, lng: -8.477434,},
     {lat: 54.133428, lng: -9.145543},
 ]
 var markers = [];
